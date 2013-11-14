@@ -28,7 +28,7 @@ class Grid():
         self.__storage[coord_y][coord_x] = self.markers[marker_index]
 
     def is_empty(self, coord_x, coord_y):
-        if self.is_what(coord_x, coord_y) == self.markers[0]:
+        if self.__storage[coord_y][coord_x] == self.markers[0]:
             return True
         else:
             return False

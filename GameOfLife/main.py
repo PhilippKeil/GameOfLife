@@ -1,8 +1,13 @@
 __author__ = 'philipp'
 import grid
 
+
 def display_grid(g):
-    pass
+    # Prints the game grid
+    tmp = g.return_grid()
+    for row in tmp:
+        print(' '.join(row))
+
 
 def new_game(size_x, size_y, markers):
     # Init the game grid
@@ -34,6 +39,7 @@ def new_game(size_x, size_y, markers):
             break
 
     # Print the final game_grid
+    display_grid(game_grid)
 
     # Start the game by calling the game cycle once
 
