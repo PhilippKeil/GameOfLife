@@ -1,6 +1,9 @@
 __author__ = 'philipp'
 import grid
 
+def display_grid(g):
+    pass
+
 def new_game(size_x, size_y, markers):
     # Init the game grid
     global game_grid
